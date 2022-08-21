@@ -1,0 +1,256 @@
+.border_heading::after{
+    width: 0%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.border_heading.is-visible::after{
+    width: 100%;
+    opacity: 1;
+}
+
+.left_animation{
+    position: relative;
+    left: -50px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.left_animation.is-visible{
+    left: 0;
+    opacity: 1;
+}
+.right_animation{
+    position: relative;
+    right: -100px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.right_animation.is-visible{
+    right: 0;
+    opacity: 1;
+}
+.top_animation{
+    position: relative;
+    top: 50px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.top_animation.is-visible{
+    top: 0;
+    opacity: 1;
+}
+
+.top_animation_heading{
+    position: relative;
+    top: 50px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.top_animation_heading.is-visible{
+    top: 0;
+    opacity: 1;
+}
+.top_animation_text{
+    position: relative;
+    top: 50px;
+    transition: all 1s .5s ease-in-out;
+    opacity: 0;
+}
+.top_animation_text.is-visible{
+    top: 0;
+    opacity: 1;
+}
+.zoom_animation{
+    position: relative;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: rotateZ(-58deg);
+}
+.zoom_animation.is-visible{
+    transform: scale(1);
+    opacity: 1;
+    transform: rotateZ(0deg);
+}
+
+
+.zoommain_animation{
+    position: relative;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.zoommain_animation.is-visible{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.common_heading::before{
+    height: 0;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.common_heading.is-visible::before{
+    height: 39px;
+    opacity: 1;
+}
+.common_heading::after{
+    height: 0;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.common_heading.is-visible::after{
+    height: 39px;
+    opacity: 1;
+}
+
+
+
+.pic_zoom_animation{
+    position: relative;
+    overflow: hidden;
+    
+}
+.pic_zoom_animation img{
+    position: relative;
+    transform: scale(1);
+    transition: all 5s ease-in-out;
+}
+.pic_zoom_animation.is-visible img{
+    transform: scale(1.2);
+}
+
+.fade_animation{
+    position: relative;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.fade_animation.is-visible{
+    opacity: 1;
+}
+
+.parallex{
+    top: 100px !important;
+    opacity: 0;
+    transition: all 3s ease-in-out;
+}
+.parallex.is-visible{
+    top: 0 !important;
+    opacity: 1;
+}
+
+
+
+.left_animation_text{
+    position: relative;
+    left: -10px;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+}
+.left_animation_text.is-visible{
+    left: 0;
+    opacity: 1;
+}
+
+.image_slide{
+   
+    position: relative;
+    z-index: 9;
+
+    
+}
+
+.image_slide::after{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: all 1s ease-in-out;
+    z-index: 9;
+}
+
+.image_slide.is-visible::after{
+    width: 0%;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .left_animation{
+        left: 0;
+        top: 50px;
+    }
+    .left_animation.is-visible{
+        top: 0;
+    }
+
+    .right_animation{
+        left: 0;
+        top: 50px;
+    }
+    .right_animation.is-visible{
+        top: 0;
+    }
+
+
+
+    .zoom_animation{
+        transform: rotateZ(-58deg);
+        transform: scale(0);
+        
+    }
+    .zoom_animation.is-visible{
+        transform: rotateZ(0deg);
+        transform: scale(1);
+        
+    }
+}
+
+/* .hero_section .carousel-item:first-child.active .hero_item .content_area h2{
+    transition: none
+}
+.hero_section .carousel-item:first-child.active .hero_item .content_area h3{
+    transition: none
+}
+.hero_section .carousel-item:first-child.active .hero_item .content_area .custom_button{
+    transition: none
+} */
+
+.hero_section .hero_item .content_area h2{
+    position: relative;
+    top:50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.hero_section .hero_item .content_area h3{
+    position: relative;
+    top:50px;
+    opacity: 0;
+    transition: all 1s .5s ease-in-out;
+}
+
+.hero_section .hero_item .content_area .custom_button{
+    position: relative;
+    top:50px;
+    opacity: 0;
+    transition: all 1s 1s ease-in-out;
+}
+
+.hero_section .carousel-item.active .hero_item .content_area h2{
+    opacity: 1;
+    top: 0;
+}
+.hero_section .carousel-item.active .hero_item .content_area h3{
+    opacity: 1;
+    top: 0;
+}
+.hero_section .carousel-item.active .hero_item .content_area .custom_button{
+    opacity: 1;
+    top: 0;
+}
+
+.hero_section.image_slide::after {
+    transition-duration: 3s;
+}

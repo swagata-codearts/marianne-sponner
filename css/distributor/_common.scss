@@ -1,0 +1,240 @@
+:root{
+    --primary-color: #0778a0;
+    --secondary-color: #b3b3b3;
+    --ternary-color: #e4e4e4;
+    --white-color: #fff;
+    --dark-color: #2c2c2c;
+    --dark2-color: #111111;
+    --description-color: #787878;
+    --description-font: 'Outfit', sans-serif;
+    --common-font: 'Zen Kurenaido', sans-serif;
+    
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width:1800px){
+    html{
+        font-size: 48%;
+    }
+}
+
+@media only screen and (max-width:991px){
+    html{
+        font-size: 33%;
+    }
+}
+
+// @media only screen and (max-width:1279px){
+//     html{
+//         font-size: 50%;
+//     }
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-family: var(--common-font);
+}
+
+.container{
+    max-width: 1740px;
+    padding: 0;
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        max-width: 1400px;
+    }
+}
+@media only screen and (max-width:1500px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width:1365px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width:1279px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .container{
+        padding: 0 2rem;
+    }
+}
+
+ul{
+    margin: 0; padding: 0;
+}
+p{
+    margin-bottom: 0;
+    font-family: var(--description-font);
+    color: var(--description-color);
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h3, h4, h5, h6{
+  color: var(--dark-color);
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color: var(--description-color);
+    transition: all .5s ease-in-out;
+    &:hover{
+        color: var(--primary-color);
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+.pt{
+    padding-top: 11rem;
+}
+.pb{
+    padding-bottom: 11rem;
+}
+
+.mt{
+    margin-top: 11rem;
+}
+.mb{
+    margin-bottom: 11rem;
+}
+
+.spt{
+    padding-top: 8.4rem;
+}
+.spb{
+    padding-bottom: 8.4rem;
+}
+
+.btn{
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 16px 5.5rem;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--common-font);
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    &::after{
+        width: 0%;
+        height: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;        
+        content: "";
+        transition: all .5s ease-in-out;
+    }
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+        border-color: var(--primary-color);
+    }
+    &.white{
+        border-color: var(--white-color);
+        color: var(--white-color);
+        &:hover{
+            color: var(--dark-color);
+            &::after{
+                background-color: var(--white-color);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+.custom_heading{
+    position: relative;
+    padding-bottom: 2rem;
+    h2{
+        font-weight: 400;
+        font-size: 4.4rem;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+    }
+    
+    &.text-center{
+        &::after{
+            right: 0;
+            margin: auto;
+        }
+    }
+    &.white{
+        h2{
+            color: var(--white-color);
+        }
+        &::after{
+            background-color: var(--white-color);
+        }
+    }
+    &::after{
+        width: 9.9rem;
+        height: 1px;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;     
+        content: "";
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .pt{
+        padding-top: 50px;
+    }
+    .pb{
+        padding-bottom: 50px;
+    }
+    .spt{
+        padding-top: 30px;
+    }
+    .spb{
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    
+    .custom_heading{
+        h2{
+            font-size: 25px;
+            line-height: 43px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+}
+
+

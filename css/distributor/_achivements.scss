@@ -1,0 +1,156 @@
+.achivemnets_section{
+    width: 100%;
+    .main_area{
+        width: 100%;
+        background-image: url(../images/striped_bg.png);
+        border: #9a9a9a 1px solid;
+        .main_area_section{
+            width: 100%;
+            .common{
+                &:nth-child(2n+2){
+                    .portion{
+                        &::before{
+                            display: none;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                &:last-child{
+                    .portion{
+                        &::before{
+                            display: none;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .portion{
+                width: 100%;
+                min-height: 32.6rem;
+                padding: 0 9.5rem 8.3rem 9.5rem;
+                margin-bottom: 8.3rem;
+                position: relative;
+                &::before{
+                    width: 1px;
+                    height: 13rem;                    
+                    background: rgb(222,222,222);
+                    background: -moz-linear-gradient(top,  rgba(222,222,222,1) 0%, rgba(154,154,154,1) 50%, rgba(222,222,222,1) 100%); 
+                    background: -webkit-linear-gradient(top,  rgba(222,222,222,1) 0%,rgba(154,154,154,1) 50%,rgba(222,222,222,1) 100%); 
+                    background: linear-gradient(to bottom,  rgba(222,222,222,1) 0%,rgba(154,154,154,1) 50%,rgba(222,222,222,1) 100%); 
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#dedede',GradientType=0 ); 
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    position: absolute;
+                    content: "";
+
+                }
+                &::after{
+                    width: 13rem;
+                    height: 1px;
+                    background: rgb(222,222,222); 
+                    background: -moz-linear-gradient(left,  rgba(222,222,222,1) 0%, rgba(154,154,154,1) 50%, rgba(222,222,222,1) 100%);
+                    background: -webkit-linear-gradient(left,  rgba(222,222,222,1) 0%,rgba(154,154,154,1) 50%,rgba(222,222,222,1) 100%); 
+                    background: linear-gradient(to right,  rgba(222,222,222,1) 0%,rgba(154,154,154,1) 50%,rgba(222,222,222,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#dedede',GradientType=1 );
+                    position: absolute;
+                    bottom: 0;
+                    right: -6rem;
+                    margin: auto;
+                    position: absolute;
+                    content: "";
+
+                }
+                
+                img{
+                    margin-bottom: 2.3rem;
+                }
+                h3{
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                    line-height: 3.4rem;
+                    letter-spacing: .25rem;
+                    margin-bottom: 3.3rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                    line-height: 3.3rem;
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .achivemnets_section {
+        .main_area{
+            .main_area_section {
+                .portion {
+                    h3{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px){
+    .achivemnets_section {
+        .main_area {
+            .main_area_section {
+                .common{
+                    &:last-child{
+                        .portion{
+                            border-bottom: none;
+                        }
+                    }
+                }
+                .portion{
+                    border-bottom: #9a9a9a 1px solid;
+                    &::before, &::after{
+                        display: none !important;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .achivemnets_section {
+        .main_area {
+            .main_area_section {
+                .portion {
+                    h3{
+                        font-size: 3rem;
+                    }
+                    p{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:350px){
+    .achivemnets_section {
+        .main_area {
+            .main_area_section {
+                .portion {
+                    h3{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

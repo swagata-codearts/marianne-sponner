@@ -1,0 +1,109 @@
+footer{
+    width: 100%;
+    background-color: var(--ternary-color);
+    .portion{
+        width: 100%;
+        &.middle{
+           
+        }
+        &.last{
+            .ft_menu{
+                li{
+                    width: 100%;
+                }
+            }
+        }
+        h2{
+            font-size: 20px;
+            letter-spacing: 3px;
+            padding-bottom: 18px;
+            margin-bottom: 3rem;
+            position: relative;
+            text-transform: uppercase;
+            color: var(--dark2-color);
+            &::before{
+                width: 8px;
+                height: 3px;
+                background-color: var(--primary-color);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+            }
+            &::after{
+                width: 8px;
+                height: 3px;
+                background-color: var(--primary-color);
+                position: absolute;
+                bottom: 0;
+                left: 11px;
+                content: "";
+            }
+        }
+        p{
+            line-height: 3rem;
+            font-size: 15px;
+            color: var(--dark2-color);
+            width: 80%;
+            font-weight: 300;
+        }
+        .ft_menu{
+            flex-wrap: wrap;
+            
+            li{
+                width: 50%;
+                flex: 0 0 auto;
+                margin-bottom: 15px;
+                font-weight: 300;
+                a{
+                    font-family: var(--description-font);
+                    font-size: 15px;
+                    color: var(--dark2-color);
+                }
+            }
+        }
+    }
+}
+.copy{
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    color: var(--dark2-color);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+}
+
+@media only screen and (max-width:500px){
+    footer{
+        .portion {
+            margin-bottom: 30px;
+            text-align: center;
+            p{
+                line-height: 4rem;
+                display: inline-block;
+            }
+            h2{
+                &::before{
+                    left: -11px;
+                    right: 0;
+                    margin: auto;
+                }
+                &::after{
+                    left: 0;
+                    right: -11px;
+                    margin: auto;
+                }
+            }
+            .ft_menu {
+                li{
+                    a{
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

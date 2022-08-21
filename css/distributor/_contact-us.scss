@@ -1,0 +1,90 @@
+.contact_details {
+    .contact_d_box {
+         margin-bottom: 4rem;
+         margin-top: 1.5rem;
+        .c_details_box {
+            margin: 0 2.5rem;
+            height: 32.7rem;
+            background: #ffffff;
+            box-shadow: rgba(206, 206, 206, .75) 1px 0 10px;
+            padding: 2rem;
+            transition: .25s;
+            .border_box{
+                border: 1px solid #666666;
+                height: 100%;
+                gap: 6.2rem;
+                .img_icon{
+                    height: 7.8rem;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .text_box h5{
+                    font-size: 18px;
+                    color: #787878;
+                    line-height: 3.3rem;;
+                    a{
+                        color: #787878;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            
+        }
+        .c_details_box.active{
+            transition: .25s;
+            height: 38.8rem;
+            .border_box .img_icon img{
+                max-width: 85%;
+            }
+        }
+        // .c_details_box:hover{
+        //     transform: scale(1.1);
+        //     transition: .25s;
+        //     height: 38.8rem;
+        // }
+    }
+    .contact_map{
+        height: 40rem;
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+
+    .contact_details .contact_d_box {
+        .c_details_box{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            .border_box .img_icon img{
+                max-width: 85%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .contact_details{
+        .contact_d_box{
+            .c_details_box{
+                .border_box{
+                    .text_box{
+                        h5{
+                            a{
+                                font-size: 16px;
+                            }
+                            span{
+                                font-size: 16px;
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

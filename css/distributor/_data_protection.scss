@@ -1,0 +1,41 @@
+.project_main_sec {
+        .content-wrap-sb{
+        .para_project{
+            & h4 {
+                font-size: 3.5rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+            }
+            & .data-content-sb {
+                margin-bottom: 3rem;
+
+                & h5    {
+                    font-size: 3rem;
+                    margin-bottom: 1.25rem;
+                    color: #656565;
+                    font-weight: 600;
+                }
+                & p{
+                    font-size: 2.15rem;
+
+                    &:not(:last-child)    {
+                    margin-bottom: 1.5rem;
+                    }
+                }
+
+                & .data-content-list-sb {
+                    padding-left: 12px;
+                        li  {
+                        list-style: square;
+                            font-size: 2.15rem;
+                            font-family: var(--description-font);
+                            line-height: 4.2rem;
+                            color: var(--description-color);
+                            margin-bottom: 1.5rem;
+                    }
+                }
+              }
+        }
+    }
+      
+}
